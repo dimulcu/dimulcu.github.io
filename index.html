@@ -1,6 +1,88 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Realm of the Mad God</title>
+<link rel="stylesheet" href="css/hub2.css">
+<link rel="shortcut icon" href="css/favicon.gif">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TriggerClick = 0;
+  $("#slidetrigger").click(function(){
+    if(TriggerClick==0){
+         TriggerClick=1;
+         $("div#mainwrap").animate({width:'1600px'}, 300);
+    }else{
+         TriggerClick=0;
+         $("div#mainwrap").animate({width:'800px'}, 300);
+    };
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TriggerClick = 0;
+  $("#triggersmall").click(function(){
+    if(TriggerClick==0){
+         TriggerClick=1;
+         $("div#mainwrap").animate({width:'1600px'}, 300);
+         $("div#shadow").animate({width:'1600px'}, 300);
+    }else{
+         TriggerClick=0;
+         $("div#mainwrap").animate({width:'800px'}, 300);
+         $("div#shadow").animate({width:'800px'}, 300);
+    };
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$('body').css({'margin-top':((($(document).height())-664)/2)+'px'});
+
+	$(window).resize(function(){
+	$('body').css({'margin-top':((($(document).height())-664)/2)+'px'});
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#dark").click(function () {
+        $('head').append('<link rel="stylesheet" href="css/hub2dark.css" type="text/css" />');
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#light").click(function () {
+        $('head').append('<link rel="stylesheet" href="css/hub2.css" type="text/css" />');
+    });
+});
+</script>
+
+</head>
+<body style="margin-top: 67.5px;">
+
 <center>
-<div id="gamebox">
+
+<table id="secondwrap" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td>
+	<div id="mainwrap" style="width: 800px;">
+	<table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td>
+	<div id="gamebox">
+		<div id="gametitle">
+			<span class="title">Project B <i>// Hub</i></span><div id="triggersmall" title="Toggle Hub"></div>
+		</div>
 		
-  		    <script src="./webclient_files/rotmg.UrlLib.js"></script>
-			<embed src="client.swf" width="800" height="600">
-</center>
+		<div id="gamewindow1">
+  		    <script src="http://www.realmofthemadgod.com/js/rotmg.UrlLib.js"></script>
+			<embed src="http://bledixon.github.io/client/WebMain.swf" width="800" height="600">
+		</div>
+		<a href="http://bledixon.com/webclient/">Refresh game window</a>
+	</div>
+	</td><td>
+	
+    </td></tr></tbody></table></div></td></tr></tbody></table></center></body></html>
